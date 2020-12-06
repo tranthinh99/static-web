@@ -3,48 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Trang chủ - Đồng hồ chính hãng</title>
     <link rel="StyleSheet" href="./css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+    <img src="images/9.jpg" width="1520">
+<style>
+    *{
+        box-sizing: border-box;
+    }
 
+    .box {
+        float: left;
+        width: 18.00%;
+        padding: 5px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: bisque;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: inline-block;
+        color: aliceblue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: coral;
+    }
+</style>
 </head>
 
 <body>
     <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
+        <header>
+            <h1 style="background-color:rgb(13, 160, 99);">ĐỒNG HỒ CHÍNH HÃNG</h1>
+            <div class="wrap-header" >
+                <!---Main Header--->
+                <div class="main-header">
+                    <div class="zerogrid">
+                        <div class="row">
+                            <div class="hero-heading">
+                                <span>**********</span>
+                                <div class="tl"></div>
+                                <div class="tr"></div>
+                                <div class="br"></div>
+                                <div class="bl"></div>
+                            </div>
+                            <div class="heading-text">
+                                <h2>******************</h2>
+                                <p>MANG ĐẾN TRẢI NGHIỆM TỐT NHẤT CHO KHÁCH HÀNG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
     </header>
     <nav>
         <ul>
-            <li><a data-section="home">Home</a></li>
-            <li><a data-section="services">Services</a></li>
+            <li><a data-section="home" class="active">DANH MỤC SẢN PHẨM</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
+                <a data-section="gioithieu" class="active">GIỚI THIỆU</a>
                 <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
+                    <a data-section="link1">Đồng hồ chính hãng</a>
+                    <a data-section="link2">Chính sách bảo hành</a>
+                    <a data-section="link3">Hướng dẫn mua hàng</a>
+                    <a data-section="link4">Chính sách kinh doanh</a>
+                    <a data-section="link5">Mua hàng trả góp</a>
+                    <a data-section="link6">Hệ thống cửa hàng</a>
                 </div>
             </li>
-            <li style="float:right"><a data-section="about">About us</a></li>
+            <li><a data-section="donghonam" class="active">ĐỒNG HỒ NAM</a></li>
+            <li class="dropdown"></li>
+            <li><a data-section="donghonu" class="active">ĐỒNG HỒ NỮ</a></li>
+            <li class="dropdown">
+                <a data-section="phukiendongho" class="active">PHỤ KIỆN ĐỒNG HỒ</a>
+                <div class="dropdown-content">
+                    <a data-section="link1">Dây đồng hồ</a>
+                    <a data-section="link2">Khóa đồng hồ</a>
+                    <a data-section="link3">Hộp xoay đồng hồ</a>
+                    <a data-section="link1">Hộp đựng đồng hồ</a>
+                    <a data-section="link1">Dụng cụ thay thế - vệ sinh</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a data-section="kienthucdongho" class="active">KIẾN THỨC ĐỒNG HỒ</a>
+                <div class="dropdown-content">
+                    <a data-section="link1">Review sản phẩm</a>
+                    <a data-section="link2">Kiến thức cơ bản</a>
+                    <a data-section="link3">Kiến thức chuyên ngành</a>
+                    <a data-section="link3">Tư vấn chọn đồng hồ</a>
+                    <a data-section="link3">Tư vấn hỏi đáp</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a data-section="tintuc" class="active">TIN TỨC</a>
+                <div class="dropdown-content">
+                    <a data-section="link1">Tin khuyến mại</a>
+                    <a data-section="link2">Tin sự kiện</a>
+                    <a data-section="link3">Liên hệ</a>
+                </div>
+            </li>
         </ul>
     </nav>
 
     <section id="home" class="hideable-section">
-        <div>Home content</div>
+        <div><h1>SẢN PHẨM NỔI BẬT</h1></div>
+        <div class="clearfix">
+            <div class="img-container">
+            <img src="images/1.jpg" alt="1" style="width:250px" height="200px">
+                <figcaption>Bentley BL1869-101MTWI</figcaption>
+                <figcaption>4,050,000đ <del> 4,500,000đ </del></figcaption>
+                <figcaption>Lượt xem: 1.523</figcaption>
+            </div>
+            <div class="img-container">
+            <img src="images/2.jpg" alt="2" style="width: 250px; height: 200px;">
+                <figcaption>Frederique Constant 750MC4H4</figcaption>
+                <figcaption>88,101,000đ <del> 97,890,000đ </del></figcaption>
+                <figcaption>Lượt xem: 1.500</figcaption>
+            </div>
+            <div class="img-container">
+                <img src="images/3.jpg" alt="3" style="width: 250px; height: 200px;">
+                <figcaption>Mark&Jones MJ1022-MRWD</figcaption>
+                <figcaption>2,500,000đ <del> 3,800,000đ</del></figcaption>
+                <figcaption>Lượt xem: 803</figcaption>
+            </div>
+            <div class="img-container">
+                <img src="images/7.jpg" alt="7" style="width: 250px; height: 200px;">
+                <figcaption>Bentley BL1865-30MWWB</figcaption>
+                <figcaption>4,500,000đ <del> 5,000,000đ</del></figcaption>
+                <figcaption>Lượt xem: 2.120</figcaption>
+            </div>
+        </div>
+        <div><h1>ĐỒNG HỒ BENTLEY</h1></div>
+        <div class="clearfix">
+            <div class="img-container">
+            <img src="images/4.jpg" alt= "4" style="width: 250px; height: 200px;">
+            <figcaption>Bentley BL1865-30MWWB</figcaption>
+            <figcaption>3,750,000đ <del> 5,000,000đ </del></figcaption>
+            <figcaption>Lượt xem: 3.670</figcaption>
+            </div>
+            <div class="img-container">
+                <img src="images/5.jpg" alt= "5" style="width: 250px; height: 200px;">
+                <figcaption>Bentley BL 1784-202KCD-S</figcaption>
+                <figcaption>7,245,000đ <del> 8,050,000đ </del></figcaption>
+                <figcaption>Lượt xem: 120,000</figcaption>
+            </div>
+            <div class="img-container">
+                <img src="images/6.jpg" alt= "6" style="width: 250px; height: 200px;">
+                <figcaption>Bentley BL1808-30MKBB</figcaption>
+                <figcaption>2,700,000đ <del> 3,000,000đ </del></figcaption>
+                <figcaption>Lượt xem: 11.970</figcaption>
+            </div>
+            <div class="img-container">
+                <img src="images/8.jpg" alt= "8" style="width: 250px; height: 200px;">
+                <figcaption>Bentley BL1684-35WWB</figcaption>
+                <figcaption>9,000,000đ <del> 10,000,000đ </del></figcaption>
+                <figcaption>Lượt xem: 10.842</figcaption>
+            </div>
+        </div>
+    </section>
+    <section id="gioithieu" class="hideable-section">
+        <div class="column">
+            <img src="images/12.jpg" alt= "12" style="width: 600px; height: 300px;">
+            <img src="images/10.jpg" width="600px"; height="300px">
+            <img src="images/13.jpg" width="600px"; height="300px">
+            <img src="images/14.jpg" width="600px"; height="300px">
+            <img src="images/15.jpg" width="600px"; height="300px">
+            <p>Khi sử dụng một chiếc đồng hồ Automatic, đối với những người mới bắt đầu tìm hiểu hẳn nhiên sẽ gặp một vài câu hỏi cũng như thắc mắc về một số điểm khác nhau, những tính năng sử dụng của đồng hồ Automatic,
+                vì thế chúng tôi sẽ giải đáp cũng như trả lời 5 điều cần biết về đồng hồ cơ cho những người mới tìm hiểu trong bài viết dưới đây.</p>
+        </div>
+    </section>
+    <section id="donghonam" class="hideable-section">
+        <div class="img-container">
+            <img src="images/11.jpg" alt="11" style="width: 250px; height: 200px";>
+            <figcaption>Meccaniche Veneziane Redentore 1301002</figcaption>
+            <figcaption>12,000,000đ <del> 14,000,000đ </del></figcaption>
+            <figcaption>Lượt xem: 13.842</figcaption>
+        </div>
+        <div class="img-container">
+            <img src="images/16.jpg" alt="16" style="width: 250px; height: 200px";>
+            <figcaption>Meccaniche Veneziane Redentore 1301019</figcaption>
+            <figcaption>12,600,000đ <del> 14,000,000đ </del></figcaption>
+            <figcaption>Lượt xem: 213.842</figcaption>
+        </div>
+        <div class="img-container">
+            <img src="images/17.jpg" alt= "17" style="width: 250px; height: 200px";>
+            <figcaption>Meccaniche Veneziane Redentore 1301018</figcaption>
+            <figcaption>12,600,000đ <del> 14,000,000đ </del></figcaption>
+            <figcaption>Lượt xem: 11.842</figcaption>
+        </div>
+        <div class="img-container">
+            <img src="images/18.jpg" alt= "18" style="width: 250px; height: 200px";>
+            <figcaption>Meccaniche Veneziane Redentore 1301011</figcaption>
+            <figcaption>12,000,000đ <del> 14,000,000đ </del></figcaption>
+            <figcaption>Lượt xem: 54.842</figcaption>
+        </div>
+        <div class="img-container">
+            <img src="images/19.jpg" alt= "19" style="width: 250px; height: 200px";>
+            <figcaption>Meccaniche Veneziane Redentore 1301002</figcaption>
+            <figcaption>12,000,000đ <del> 14,000,000đ </del></figcaption>
+            <figcaption>Lượt xem: 13.842</figcaption>
+        </div>
+        <div class="clearfix">
+            <div class="img-container">
+                <img src="images/20.jpg" alt= "20" style="width: 250px; height: 200px";>
+                <figcaption>Meccaniche Veneziane Redentore 1301009</figcaption>
+                <figcaption>12,000,000đ <del> 14,000,000đ </del></figcaption>
+                <figcaption>Lượt xem: 33.842</figcaption>
+            </div>
+            <div class="img-container">
+                <img src="images/21.jpg" alt= "21" style="width: 250px; height: 200px";>
+                <figcaption>Meccaniche Veneziane Redentore 1302011</figcaption>
+                <figcaption>12,300,000đ <del> 15,000,000đ </del></figcaption>
+                <figcaption>Lượt xem: 23.842</figcaption>
+            </div>
+            <div class="img-container">
+                <img src="images/22.jpg" alt= "22" style="width: 250px; height: 200px";>
+                <figcaption>Meccaniche Veneziane Redentore 1302015</figcaption>
+                <figcaption>15,000,000đ <del> 17,500,000đ </del></figcaption>
+                <figcaption>Lượt xem: 32.842</figcaption>
+            </div>
+            <div class="img-container">
+                <img src="images/23.jpg" alt= "23" style="width: 250px; height: 200px";>
+                <figcaption>Meccaniche Veneziane Redentore 1302013</figcaption>
+                <figcaption>12,650,000đ <del> 14,300,000đ </del></figcaption>
+                <figcaption>Lượt xem: 7.282</figcaption>
+            </div>
+            <div class="img-container">
+                <img src="images/24.jpg" alt= "24" style="width: 250px; height: 200px";>
+                <figcaption>Meccaniche Veneziane Redentore 1302018</figcaption>
+                <figcaption>11,500,000đ <del> 13,500,000đ </del></figcaption>
+                <figcaption>Lượt xem: 9.842</figcaption>
+            </div>
+    
+        </div>
+
+
     </section>
 
-    <section id="services" class="hideable-section">
-        <div>Services content</div>
+    <section id="donghonu" class="hideable-section">
+        <div class="column">
+            <img src="images/25.jpg" width="600px"; height="300px">
+            <img src="images/26.jpg" width="600px"; height="300px">
+            <img src="images/27.jpg" width="600px"; height="300px">
+            <img src="images/28.jpg" width="600px"; height="300px">
+            <img src="images/29.jpg" width="600px"; height="300px">
+            <img src="images/30.jpg" width="600px"; height="300px">
+            <p>Một số mẫu đồng hồ nữ để khách hàng tham khảo giá sẽ update trong thời gian tới</p>
+        </div>
     </section>
 
-    <section id="about" class="hideable-section">
-        <div>About content</div>
+    <section id="phukiendongho" class="hideable-section">
+        <div class= "column">
+            <img src="images/31.jpg" width="400px"; height="200px">
+            <img src="images/32.jpg" width="400px"; height="200px">
+            <img src="images/33.jpg" width="400px"; height="200px">
+            <img src="images/34.jpg" width="400px"; height="200px">
+            <img src="images/35.jpg" width="400px"; height="200px">
+            <img src="images/36.jpg" width="400px"; height="200px">
+            <p>Một số dây da đồng hồ cho khách hàng tham khảo </p>
+        </div>
     </section>
 
     <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
+        <div><h1>ĐỒNG HỒ CHÍNH HÃNG</h1></div>
+        <p>Các sản phẩm chính hãng do một hãng phát triển</p>
+        <p>và những mẫu mã đó đều được đi đăng kí bản quyền,</p>
+        <p>những hàng chính hãng sẽ không bao giờ trùng với hãng khác.</p>
+        <p>Vì thế nên chúng ta có thể hiểu là đồng hồ Authentic cũng được gọi là đồng hồ chính hãng.</p>
     </section>
 
     <section id="link2" class="hideable-section">
@@ -55,6 +304,22 @@
         <div>Link3 content</div>
     </section>
 
+    <section id="kienthucdongho" class="hideable-section">
+        <div class="clearfix">
+            <div class="img-container">
+                <img src="images/37.jpg" alt= "37" style="width: 250px; height: 300px;">
+                <p>CÁCH ĐÁNH BÓNG MẶT ĐỒNG HỒ BỊ XƯỚC CHUẨN THỢ</p>
+            </div>
+            <div class="img-container">
+                <img src="images/38.jpg" alt= "38" style="width: 250px; height: 300px;">
+                <p>Meccaniche Veneziane Redentore 1302018</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tintuc" class="hideable-section">
+        <div>About content</div>
+    </section>
     <script>
         $(function() {
             $('nav ul li a').click(function() {
